@@ -1,2 +1,3 @@
 # xbot-front.github.io
-Frontend xbot
+
+Pure Vanilla JS EcmaScript6 front-end for xbot.dev
