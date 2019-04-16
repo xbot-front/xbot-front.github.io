@@ -6,8 +6,10 @@
     <title>Xbot Ofertas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="shortcut icon" href="http://www.iconj.com/ico/v/y/vyrkqwnpyw.ico" type="image/x-icon" />
-
+    <script type="text/javascript" src="./static/js/utils.js"></script>
+    <script type="text/javascript" src="./static/js/index.js"></script>
+    <script type="text/javascript" src="./static/js/product.js"></script>
+    <link   rel="shortcut icon" href="./static/xbot.ico" type="image/x-icon" />
   </head>
   <body>
 
@@ -50,65 +52,9 @@
   <section>
     <div id="offers-section" class="columns is-multiline is-mobile is-centered">
 
-            <div class="column is-narrow">
-                <article class="card" style="width: 340px">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            <a title="Ver en Amazon" href="https://www.amazon.es/dp/B01GYHZH00?th=1&psc=1&tag=mundotododepo-21">
-                            Moolecole Seco Húmedo Separado Bolso De La Natación Bolsa De Deporte Impermeable del Deporte Bolsa De Almacenamiento De Natación Azul
-                            </a>
-                        </p>
-                    </header>
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61JX4QNjoDL._SL1001_.jpg">
-                        </figure>
-                    </div>
-                    <footer class="card-footer">
-                        <div class="tags">
-                          <span class="tag is-danger">Antes: EUR 28.95</span>
-                          <span class="tag is-success">Ahora: EUR 15.34</span>
-                          <span class="tag">Visto en: @mundodepo-21</span>
-                        </div>
-
-                        <div name="rater"></div>
-                    </footer>
-                </article>
-            </div>
-
-            <div class="column is-narrow">
-                <article class="card column is-narrow" style="width: 340px">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            <a title="Ver en Amazon" href="https://www.amazon.es/Joma-Olimpia-Sujetador-Mujer-Verde/dp/B06Y68GVD4/ref=as_li_ss_tl?psc=1&linkCode=sl1&tag=mundotododepo-21&linkId=cb877f9ad89f1f5be254ace66d6b3b08&language=es_ES">
-                            Joma Olimpia Sujetador, Mujer, Verde Fluor, L
-                            </a>
-                        </p>
-                    </header>
-                    <div class="card-image">
-                        <figure class="image">
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/91fp2LYrmYL._SL1500_.jpg">
-                        </figure>
-                    </div>
-                    <footer class="card-footer">
-                        <div class="tags">
-                          <span class="tag is-danger">Antes: EUR 17,95</span>
-                          <span class="tag is-success">Ahora: EUR 6,89</span>
-                          <span class="tag">Visto en: @mundodepo-21</span>
-                        </div>
-
-                        <div name="rater"></div>
-                    </footer>
-                </article>
-            </div>
-
-
     </div>
 
   </section>
-
-
-
 
   <script type="text/javascript">
       (function() {
@@ -120,5 +66,10 @@
         });
       })();
     </script>
+
+    <script>
+        loadProducts()
+    </script>
+
   </body>
 </html>
