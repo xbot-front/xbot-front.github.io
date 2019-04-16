@@ -6,7 +6,7 @@ function loadProducts(){
         let products_panel = document.getElementById('offers-section');
         for (product of products){
             p = new Product(product)
-            console.log(p.shortDescription)
+            //console.log(p.shortDescription)
             products_panel.appendChild(p.toElement())
         }
     })
