@@ -1,3 +1,35 @@
+function goHome(){
+    let title = document.getElementById('title')
+    let subtitle = document.getElementById('subtitle')
+
+    title.innerText = 'Sacale partido a tu canal de Telegram'
+    subtitle.innerText = 'Crea los anuncios con solo enviar un link'
+
+    let content = document.getElementById('content')
+    content.innerHTML = ''
+    content.appendChild(htmlToElement(`<div id="home-section" class="columns is-multiline is-mobile is-centered"></div>`))
+}
+
+
+
+
+function goOffers(){
+
+    let title = document.getElementById('title')
+    let subtitle = document.getElementById('subtitle')
+
+    title.innerText = 'Ofertas de XBot'
+    subtitle.innerText = 'Listado de ofertas actuales interesantes'
+
+
+    let content = document.getElementById('content')
+    content.innerHTML = ''
+    content.appendChild(htmlToElement(`<div id="offers-section" class="columns is-multiline is-mobile is-centered"></div>`))
+
+    loadProducts()
+}
+
+
 
 function loadProducts(){
     fetch('https://tg-xbot-api.herokuapp.com/api/products?limit=80&origin=RNogales')

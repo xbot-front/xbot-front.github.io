@@ -12,6 +12,19 @@ class Product {
     }
 
     toHTML(){
+        let prices_html =  `<div class="tags">
+                  <span class="tag is-danger is-medium">Antes: ${this.standardPrice}</span>
+                  <span class="tag is-success is-medium">Ahora: ${this.price}</span>
+                </div>`
+
+        if (this.standardPrice == null){
+            prices_html =  `<div class="tags">
+                      <span class="tag is-success is-medium">Ahora: ${this.price}</span>
+                    </div>`
+        }
+
+
+
         return `<div class="column is-narrow">
                 <article class="card" style="width: 340px">
                     <header class="card-header">
@@ -25,10 +38,7 @@ class Product {
                         </figure>
                     </div>
                     <footer class="card-footer">
-                        <div class="tags">
-                          <span class="tag is-danger">Antes: ${this.standardPrice}</span>
-                          <span class="tag is-success">Ahora: ${this.price}</span>
-                        </div>
+                        ${prices_html}
                         <div name="rater"></div>
                     </footer>
                 </article>
