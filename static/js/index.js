@@ -7,8 +7,19 @@ function goHome(){
 
     let content = document.getElementById('content')
     content.innerHTML = ''
-    content.appendChild(htmlToElement(`<div id="home-section" class="columns is-multiline is-mobile is-centered"></div>`))
-}
+    content.appendChild(htmlToElement(`<div id="home-section" class="columns is-mobile is-centered">
+                                          <div class="column">
+                                          </div>
+                                          <div class="column is-half">
+                                            <figure class="image">
+                                              <img src="./static/img/xbot_usage.jpg">
+                                            </figure>
+                                          </div>
+                                          <div class="column">
+
+                                          </div>
+                                        </div>`))
+                                    }
 
 
 
