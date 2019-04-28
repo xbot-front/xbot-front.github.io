@@ -43,7 +43,7 @@ function goOffers(){
 
 
 function loadProducts(){
-    fetch('https://tg-xbot-api.herokuapp.com/api/products?limit=80&origin=RNogales')
+    fetch('https://tg-xbot-api.herokuapp.com/api/products?limit=80&origin=XBOT_API')
     .then(response => response.json())
     .then(products => {
         let products_panel = document.getElementById('offers-section');
