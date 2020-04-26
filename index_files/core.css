@@ -1118,7 +1118,6 @@ Testimonials Styles
 
 .testimonial .author h5, .testimonial .author span {
   left: 50%;
-  position: absolute;
   opacity: 0.8;
   padding: 3px 5px;
 }
@@ -1134,6 +1133,7 @@ Testimonials Styles
 
 .testimonial .author span {
   font-size: 0.8em;
+  position: absolute;
   color: #fff;
   top: 50%;
 }
